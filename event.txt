@@ -1,0 +1,17 @@
+This table stores event details._
+
+| Column Name   | Data Type      | Nullable | Description             |
+|--------------|--------------|----------|-------------------------|
+| `event_name` | VARCHAR(100) | YES      | Name of the event       |
+| `event_date` | DATE         | YES      | Date of the event       |
+| `venue`      | VARCHAR(30)  | YES      | Venue location          |
+| `statut`     | VARCHAR(20)  | YES      | Status of the event     |
+
+sl query
+-----------
+CREATE TABLE event (
+    event_name VARCHAR(100),
+    event_date DATE,
+    venue VARCHAR(30),
+    statut VARCHAR(20)
+);
