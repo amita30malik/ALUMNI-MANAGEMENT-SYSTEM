@@ -1,0 +1,39 @@
+This table stores alumni details.
+
+| Column Name     | Data Type      | Nullable | Description                 |
+|---------------|--------------|----------|-----------------------------|
+| `alu_id`      | VARCHAR(10)  | YES      | Unique alumni ID           |
+| `first_name`  | VARCHAR(30)  | YES      | First name of the alumni   |
+| `last_name`   | VARCHAR(30)  | YES      | Last name of the alumni    |
+| `dob`         | DATE         | YES      | Date of birth              |
+| `gender`      | VARCHAR(10)  | YES      | Gender                     |
+| `add_corr`    | VARCHAR(50)  | YES      | Correspondence address     |
+| `add_offc`    | VARCHAR(50)  | YES      | Office address             |
+| `email_add`   | VARCHAR(50)  | YES      | Email address              |
+| `mob_no`      | VARCHAR(10)  | YES      | Mobile number              |
+| `curr_city`   | VARCHAR(30)  | YES      | Current city               |
+| `curr_company`| VARCHAR(30)  | YES      | Current company            |
+| `desg`        | VARCHAR(20)  | YES      | Designation                |
+| `session_from`| YEAR(4)      | YES      | Session start year         |
+| `session_to`  | YEAR(4)      | YES      | Session end year           |
+| `branch`      | VARCHAR(30)  | YES      | Academic branch            |
+
+SQL query
+----------
+CREATE TABLE alureg (
+    alu_id VARCHAR(10),
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    dob DATE,
+    gender VARCHAR(10),
+    add_corr VARCHAR(50),
+    add_offc VARCHAR(50),
+    email_add VARCHAR(50),
+    mob_no VARCHAR(10),
+    curr_city VARCHAR(30),
+    curr_company VARCHAR(30),
+    desg VARCHAR(20),
+    session_from YEAR(4),
+    session_to YEAR(4),
+    branch VARCHAR(30)
+);
